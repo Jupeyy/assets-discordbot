@@ -1,0 +1,28 @@
+[package]
+name = "ddnet_discord"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.97"
+dotenvy = "0.15.7"
+regex = "1.11.1"
+reqwest = { version = "0.12.15", features = ["blocking"] }
+tokio = { version = "1.44.1", features = ["rt-multi-thread", "sync", "macros", "time"] }
+log = "0.4.26"
+env_logger = "0.11.7"
+serde_json = "1.0.140"
+chrono = { version = "0.4.40", features = ["serde"] }
+
+twilight-cache-inmemory = "0.16.0"
+twilight-gateway = "0.16.0"
+twilight-http = "0.16.0"
+twilight-model = "0.16.0"
+twilight-util = { version = "0.16.0", features = ["builder"] }
+twilight-validate = "0.16.0"
+twilight-mention = "0.16.0"
+
+assets-base = { git = "https://github.com/ddnet/ddnet-rs.git", rev = "52a829a2e23be29901f0b0939ca171e24f9f6bc1" }
+image-utils = { git = "https://github.com/ddnet/ddnet-rs.git", rev = "52a829a2e23be29901f0b0939ca171e24f9f6bc1" }
